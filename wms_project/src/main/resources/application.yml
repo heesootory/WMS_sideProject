@@ -1,0 +1,19 @@
+
+# Server
+server:
+  port: 8080
+
+# Mysql
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wmsTest?serverTimezone=UTC
+    username: root
+    password: bmg930813
+
+
+# Mybatis
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.wms_project
